@@ -15,4 +15,9 @@ class Users extends Component
         $this->users = User::all();    
         return view('livewire.users');
     }
+
+    private function resetInputFields(){
+        $this->name = '';
+        $this->email = '';
+    }
 }
